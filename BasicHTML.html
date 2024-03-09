@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Layout</title>
+    <style>
+        .head1 {
+            background-color: #141416;
+            font-size: 40px;
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+            padding: 25px;
+        }
+
+        body {
+            background-color: #141416;
+            color: #ffffff;
+            margin: 0 auto;
+            background-position: center;
+            background-size: contain;
+            text-align: center;
+            padding-bottom: 60px;
+        }
+
+        .menu {
+            position: sticky;
+            top: 0;
+            background-color: #212129;
+            padding: 0px 0px;
+            color: #ffffff;
+            text-align: center;
+            width: 100%;
+        }
+
+        .menu a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+        .menu a:hover {
+            background-color: #870328;
+            color: #ffffff;
+        }
+
+        footer {
+            width: 100%;
+            background-color: #212129;
+            color: #ffffff;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            position: fixed;
+            bottom: 0;
+        }
+
+        .body_sec {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            background-color: #212129;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: left;
+            margin-bottom: 20px;
+            width: 30%;
+            box-sizing: border-box;
+            transition: background-color 0.3s;
+        }
+
+        .box:hover {
+            background-color: #870328;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="head1">
+            Basic HTML Layout
+        </div>
+    </header>
+
+    <!-- Menu Navigation Bar -->
+    <nav class="menu">
+        <a href="#dashboard">Dashboard</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about me"> About Me</a>
+    </nav>
+
+    <!-- Body section -->
+    <main>
+        <section id="Content">
+
+            <h3>Joseph Jose A. Deysolong</h3>
+            <h3>CS2A</h3>
+
+            <div class="body_sec">
+                <div class="box light">
+                    <h3>Column 1</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+
+                <div class="box medium">
+                    <h3>Column 2</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+
+                <div class="box dark">
+                    <h3>Column 3</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>This is a Footer</footer>
+</body>
+
+</html>
